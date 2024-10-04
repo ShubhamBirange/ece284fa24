@@ -1,7 +1,7 @@
 .PHONY: compile simulate clean
 all: simulate
 
-VERILOG_SRC := $(shell ls *.v)
+VERILOG_SRC := $(shell ls verilog/*.v)
 
 compiled: $(VERILOG_SRC)
 	iverilog -o compiled $(VERILOG_SRC) 
